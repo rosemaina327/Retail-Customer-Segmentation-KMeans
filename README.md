@@ -1,26 +1,52 @@
-# Retail-Customer-Segmentation-KMeans
-Implement K-Means clustering to segment customers based on purchase history (e.g., recency, frequency, monetary value). Analyze segments to tailor marketing strategies.
+# Linear Regression Model for House Price Prediction
 
-This project implements a K-Means clustering algorithm to segment customers of a retail store based on their spending behavior and demographic information. Customer segmentation is a crucial step for businesses to understand their customer base and design personalized marketing strategies. By analyzing customer data, this project groups individuals into distinct clusters that represent similar purchasing behaviors.
+This repository contains the implementation of a Linear Regression model to predict house prices based on various features, including square footage, the number of bedrooms, and bathrooms.
 
-The dataset used contains key attributes such as Gender, Age, Annual Income (k$), and Spending Score (1-100). These features serve as proxies to represent customer behavior in the absence of detailed purchase histories. Using these features, the clustering algorithm groups customers into meaningful clusters that can help businesses identify different customer profiles, such as budget-conscious buyers, average spenders, and premium customers.
+## Index
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [File Structure](#file-structure)
+4. [Steps to Run](#steps-to-run)
+    1. [Data Cleaning](#data-cleaning)
+    2. [Model Training and Prediction](#model-training-and-prediction)
+5. [Visualization](#visualization)
+6. [Dependencies](#dependencies)
+7. [Results](#results)
+8. [Dataset](#dataset)
+9. [License](#license)
 
-Key steps in the project include:
+## Project Overview
+The project is a part of Task 1 of the Prodigy InfoTech internship and includes:
 
-Data Preprocessing:
+- Preprocessing raw data for cleaning and feature preparation.
+- Building a Linear Regression model enhanced with Polynomial Features to capture non-linear relationships.
+- Evaluating the model's performance using metrics like Mean Squared Error (MSE) and R-squared (R²).
+- Visualizing model accuracy with scatter plots, residual plots, and histograms.
+- Saving predictions to a well-structured CSV file.
 
-Encoding the categorical feature Gender into numeric form for analysis.
-Scaling the data using StandardScaler to standardize the features, ensuring fair distance-based comparisons in K-Means.
-Optimal Cluster Determination:
+## Features
+### Data Preprocessing:
+- Handling missing values and outliers.
+- Log-transforming skewed data for better model performance.
+- Encoding categorical features and scaling numerical features.
 
-The Elbow Method and Silhouette Score were used to determine the optimal number of clusters, balancing cluster tightness and separability.
-Clustering and Visualization:
+### Model Training:
+- Using Linear Regression with Polynomial Features for non-linear relationships.
 
-The K-Means algorithm was applied with the chosen number of clusters.
-Visualizations, such as scatterplots, depict the clusters based on their spending patterns and income levels, providing insights into customer groups.
-Evaluation:
+### Visualization:
+- Plots for evaluating model performance and residual errors.
 
-The clusters were evaluated to ensure meaningful separations, offering actionable insights for targeted marketing campaigns or business strategies.
-This project demonstrates the practical application of machine learning in business and marketing. It provides a foundation for retail stores to better understand their customers and make data-driven decisions to improve customer engagement. The repository includes well-documented Python code, data preprocessing steps, clustering analysis, and visualizations.
+### Predictions:
+- Final house price predictions saved in a CSV file with essential columns.
 
-Future improvements could involve incorporating more detailed purchase history data (e.g., transaction logs or product categories) to refine customer segmentation further. This project is ideal for beginners and intermediate data scientists interested in learning clustering techniques and applying them to real-world problems.
+## File Structure
+Customer Segmentation/
+│   Figure_1.png
+│   Figure_2.png
+│   code_1.py
+│   Mall_Customers.csv
+│   README.md
+│
+└───docs/
+        report.pdf
+        data_description.txt
